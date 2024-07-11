@@ -18,6 +18,8 @@ tailwind.config = {
 
 <body class="antialiased font-sans bg-gray-200">
 
+@yield('content')
+
 @stack('scripts')
 </body>
 </html>
