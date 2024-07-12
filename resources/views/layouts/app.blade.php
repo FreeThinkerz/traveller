@@ -8,7 +8,8 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                primary: 'deepskyblue'
+                primary: 'deepskyblue',
+                secondary: 'orange'
             }
         }
     }
@@ -17,7 +18,7 @@ tailwind.config = {
 </head>
 
 <body class="antialiased font-sans bg-gray-200">
-
+<x-navbar />
 @yield('content')
 
 @stack('scripts')
