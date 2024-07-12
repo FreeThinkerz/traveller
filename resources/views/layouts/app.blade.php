@@ -8,7 +8,7 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                primary: 'deepskyblue',
+                primary: '#111',
                 secondary: 'orange'
             }
         }
