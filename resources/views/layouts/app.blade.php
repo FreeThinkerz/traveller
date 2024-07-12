@@ -6,6 +6,13 @@
 <script>
 tailwind.config = {
     theme: {
+        screens: {
+            mobile: '300px',
+            tablet: '480px',
+            laptop: '920px',
+            desktop: '1280px',
+            tv: '1536px',
+        },
         extend: {
             colors: {
                 primary: '#111',
