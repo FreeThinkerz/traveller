@@ -6,10 +6,18 @@
 <script>
 tailwind.config = {
     theme: {
+        screens: {
+            mobile: '300px',
+            tablet: '480px',
+            laptop: '920px',
+            desktop: '1280px',
+            tv: '1536px',
+        },
         extend: {
             colors: {
                 primary: '#111',
-                secondary: 'orange'
+                secondary: 'orange',
+                muted: 'theme(colors.gray.500)'
             }
         }
     }
@@ -21,6 +29,7 @@ tailwind.config = {
 <x-navbar />
 @yield('content')
 
+<x-footer />
 @stack('scripts')
 </body>
 </html>
