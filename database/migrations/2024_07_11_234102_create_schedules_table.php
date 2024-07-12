@@ -1,18 +1,25 @@
 <?php
 
+use App\Models\Bus;
+use App\Models\Route;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class () extends Migration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
         Schema::create('schedules', function (Blueprint $table) {
-            $table->id();
+            $table->ulid('id')->primary();
+            $table->foreignIdFor(Bus::class)->constrained();
+            $table->foreignIdFor(Route::class);
+            $table->timestamp('departure_time');
+            $table->timestamp('arrival_time')
+                ->comment('Estimated arrival time');
+            $table->float('price');
             $table->timestamps();
         });
     }

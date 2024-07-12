@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Bus;
+use App\Models\Route;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +19,11 @@ class ScheduleFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'bus_id' => Bus::factory(),
+            'route_id' => Route::factory(),
+            'departure_time' => now(),
+            'arrival_time' => now()->addHours(1),
+            'price' => $this->faker->numberBetween(2, 5) * 1500,
         ];
     }
 }
