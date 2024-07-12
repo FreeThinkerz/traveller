@@ -20,15 +20,16 @@ Route::post('register', function (Request $request) {
         [
             'name' => ['required', 'string', 'min:3'],
             'email' => ['required', 'email'],
-            'password' => ['required', 'min:8']
+            'password' => ['required', 'min:8'],
             'password_confirmation' => ['required', 'same:password']
         ]
     );
 
     $user = \App\Models\User::query()->create($attributes);
 
-    if (!$user)
+    if (!$user) {
         throw \Illuminate\Validation\ValidationException::withMessages(['register' => 'Echèc de l\'enregistrement.']);
+    }
 
     return redirect()->intended('/');
 });
