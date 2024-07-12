@@ -16,7 +16,21 @@ Route::get('/?', function () {
 
 Route::view('register', 'register');
 Route::post('register', function (Request $request) {
-    $attributes = $request->validate();
+    $attributes = $request->validate(
+        [
+            'name' => ['required', 'string', 'min:3'],
+            'email' => ['required', 'email'],
+            'password' => ['required', 'min:8']
+            'password_confirmation' => ['required', 'same:password']
+        ]
+    );
+
+    $user = \App\Models\User::query()->create($attributes);
+
+    if (!$user)
+        throw \Illuminate\Validation\ValidationException::withMessages(['register' => 'Echèc de l\'enregistrement.']);
+
+    return redirect()->intended('/');
 });
 
 
