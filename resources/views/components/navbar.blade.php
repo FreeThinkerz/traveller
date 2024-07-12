@@ -4,7 +4,7 @@
   </a>
 
 
-  <div class="flex gap-4 [&>a]:font-semibold [&>a]:focus:text-primary">
+  <div class="flex gap-4 [&>a]:font-semibold [&>a]:focus:text-primary text-white">
     <a href="{{ route('about') }}" class="">À propos</a>
     <a href="{{ route('contact') }}" class="">Contacte</a>
   </div>
