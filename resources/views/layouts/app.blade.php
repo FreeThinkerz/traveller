@@ -9,7 +9,8 @@ tailwind.config = {
         extend: {
             colors: {
                 primary: '#111',
-                secondary: 'orange'
+                secondary: 'orange',
+                muted: 'theme(colors.gray.500)'
             }
         }
     }
@@ -21,6 +22,7 @@ tailwind.config = {
 <x-navbar />
 @yield('content')
 
+<x-footer />
 @stack('scripts')
 </body>
 </html>
