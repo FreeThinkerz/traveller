@@ -16,7 +16,7 @@ tailwind.config = {
         extend: {
             colors: {
                 primary: '#111',
-                secondary: 'orange',
+                secondary: '#A5820A',
                 muted: 'theme(colors.gray.500)'
             }
         }
