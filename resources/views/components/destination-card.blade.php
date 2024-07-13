@@ -1,4 +1,4 @@
-@props(['destination', 'is-default' => false])
+@props(['destination'])
 
 <div class="rounded  overflow-hidden shadow max-w-lg">
     <div class="relative">
@@ -15,7 +15,7 @@
     </div>
     <div class="bg-primary p-4 flex items-center justify-end space-x-4">
         <button
-            class="p-2  @if ($isDefault) hover:bg-secondary hover:text-white @endif  bg-white font-bold flex items-center justify-center space-x-2 rounded shadow">
+            class="p-2 hover:bg-secondary hover:text-white  bg-white font-bold flex items-center justify-center space-x-2 rounded shadow">
             <span>Reserve Now</span>
             <svg class="size-5 @if ($isDefault) group-hover:fill-white @else fill-black @endif"
                 xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
