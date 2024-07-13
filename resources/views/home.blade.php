@@ -1,5 +1,22 @@
 <?php
 $inNav = 'passengers';
+$sliders = [
+    'avenir-voyages.jpeg',
+    'buca-voyages.jpeg',
+    'camrail.jpeg',
+    'cerises-express.jpeg',
+    'danay-express.jpeg',
+    'finexs-voyages.jpeg',
+    'garanti-express.jpeg',
+    'general-express.jpeg',
+    'global-voyages.jpeg',
+    'men-travel.jpeg',
+    'overline-voyages.jpeg',
+    'touristic-express.jpeg',
+    'transcam-voyages.jpeg',
+    'united-express.jpeg'
+];
+
 $destinations = [
     [
         'name' => 'Buea',
@@ -275,6 +292,26 @@ $destination_list= [
 
             </div>
         </div>
+        {{-- section 2 --}}
+        <div class="bg-white py-10 mt-10 flex flex-col">
+            <div class="slider [mask-image:linear-gradient(to_right,transparent_0%,#000_10%,transparent_190%)] flex overflow-hidden w-full space-x-4 px-2">
+              <div class="list relative inline-flex gap-4 items-center animate-slide origin-left [&:has(.item:hover)]:[animation-play-state:paused] [&:hover>*]:blur-sm [&>*]:cursor-pointer">
+                @foreach($sliders as $slider)
+                  <div class="item hover:!blur-0">
+                    <img class="min-w-10 max-w-52 aspect-auto rounded-sm" src="{{ asset('images/' . $slider) }}" alt="{{ str($slider)->replace('.jpeg', '')->replace('-', ' ')->title() }}">
+                  </div>
+                @endforeach
+
+                @foreach($sliders as $slider)
+                  <div class="item hover:!grayscale-0">
+                    <img class="min-w-10 max-w-52 aspect-auto rounded-sm" src="{{ asset('images/' . $slider) }}" alt="{{ str($slider)->replace('.jpeg', '')->replace('-', ' ')->title() }}">
+                  </div>
+                @endforeach
+
+              </div>
+            </div>
+        </div>
+
         {{-- section 2 --}}
         <div class="bg-white px-5 desktop:px-60 laptop:px-32 py-10 mt-10 flex flex-col">
             <h1 class="font-bold text-xl text-center text-primary">Popular Destinations with Departure directly from Douala

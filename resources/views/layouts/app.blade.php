@@ -18,7 +18,21 @@ tailwind.config = {
                 primary: '#111',
                 secondary: '#A5820A',
                 muted: 'theme(colors.gray.500)'
-            }
+            },
+            animation: {
+                slide: 'slide 10s linear infinite',
+            },
+            keyframes: {
+                slide: {
+                    "from": {
+                        transform: "translateX(0%)",
+                    },
+                    "to": {
+                        transform: "translateX(-50%)",
+                    },
+                },
+
+              }
         }
     }
 }
