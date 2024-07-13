@@ -19,6 +19,21 @@ $sliders = [
 
 $destinations = [
     [
+        'name' => 'Kribi',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Kribi',
+    ],
+    [
+        'name' => 'Bafang',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Bafang',
+    ],
+    [
+        'name' => 'Ngaoundéré',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Ngaoundéré',
+    ],
+    [
         'name' => 'Buea',
         'price' => 100000,
         'thumbnail' => 'https://via.placeholder.com/150x100?text=Buea',
@@ -32,6 +47,21 @@ $destinations = [
         'name' => 'Nkongsamba',
         'price' => 150000,
         'thumbnail' => 'https://via.placeholder.com/150x100?text=Nkongsamba',
+    ],
+    [
+        'name' => 'Garoua',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Garoua',
+    ],
+    [
+        'name' => 'Bertuoa',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Bertoua',
+    ],
+    [
+        'name' => 'Dschang',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Dschang',
     ],
 ];
 
