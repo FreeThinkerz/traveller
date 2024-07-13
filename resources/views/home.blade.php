@@ -33,6 +33,21 @@ $destinations = [
         'price' => 150000,
         'thumbnail' => 'https://via.placeholder.com/150x100?text=Nkongsamba',
     ],
+    [
+        'name' => 'Garoua',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Garoua',
+    ],
+    [
+        'name' => 'Bertuoa',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Bertoua',
+    ],
+    [
+        'name' => 'Dschang',
+        'price' => 150000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Dschang',
+    ],
 ];
 
 $destination_list= [
