@@ -16,7 +16,6 @@ class TravellerController extends Controller
     public function home(): View
     {
         $schedules = Schedule::query()->whereDay('departure_time', '=', now())->get();
-        dump($schedules);
         return view('home', compact('schedules'));
     }
 
