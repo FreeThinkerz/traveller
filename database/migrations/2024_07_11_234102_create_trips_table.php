@@ -11,7 +11,11 @@ return new class () extends Migration {
     public function up(): void
     {
         Schema::create('trips', function (Blueprint $table) {
-            $table->id();
+            $table->ulid('id')->primary();
+            $table->string('origin');
+            $table->string('destination');
+            $table->float('distance');
+            $table->float('price');
             $table->timestamps();
         });
     }

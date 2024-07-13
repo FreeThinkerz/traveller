@@ -19,7 +19,6 @@ return new class () extends Migration {
             $table->timestamp('departure_time');
             $table->timestamp('arrival_time')
                 ->comment('Estimated arrival time');
-            $table->float('price');
             $table->timestamps();
         });
     }

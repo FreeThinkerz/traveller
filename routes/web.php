@@ -3,12 +3,12 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () { return view('home'); })->name('home');
-Route::get('/apropos', function () {
-    return view('about');
-})->name('about');
-
-Route::view('contacte', 'contact')->name('contact');
+Route::controller(\App\Http\Controllers\TravellerController::class)
+    ->group(function () {
+        Route::get('', 'home')->name('home');
+        Route::get('apropos', 'about')->name('about');
+        Route::get('contact', 'contact')->name('contact');
+    });
 
 Route::get('/?', function () {
     return view('welcome');
