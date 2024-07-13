@@ -19,6 +19,21 @@ $sliders = [
 
 $destinations = [
     [
+        'name' => 'Kribi',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Kribi',
+    ],
+    [
+        'name' => 'Bafang',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Bafang',
+    ],
+    [
+        'name' => 'Ngaoundéré',
+        'price' => 100000,
+        'thumbnail' => 'https://via.placeholder.com/150x100?text=Ngaoundéré',
+    ],
+    [
         'name' => 'Buea',
         'price' => 100000,
         'thumbnail' => 'https://via.placeholder.com/150x100?text=Buea',
