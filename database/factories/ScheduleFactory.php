@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Bus;
-use App\Models\Route;
+use App\Models\Trip;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,7 +20,7 @@ class ScheduleFactory extends Factory
     {
         return [
             'bus_id' => Bus::factory(),
-            'route_id' => Route::factory(),
+            'route_id' => Trip::factory(),
             'departure_time' => now(),
             'arrival_time' => now()->addHours(1),
             'price' => $this->faker->numberBetween(2, 5) * 1500,

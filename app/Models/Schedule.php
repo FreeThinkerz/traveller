@@ -19,7 +19,7 @@ class Schedule extends Model
 
     public function route(): BelongsTo
     {
-        return $this->belongsTo(Route::class);
+        return $this->belongsTo(Trip::class);
     }
 
     public function reservations(): hasMany

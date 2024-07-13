@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\Bus;
-use App\Models\Route;
+use App\Models\Trip;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,7 +15,7 @@ return new class () extends Migration {
         Schema::create('schedules', function (Blueprint $table) {
             $table->ulid('id')->primary();
             $table->foreignIdFor(Bus::class)->constrained();
-            $table->foreignIdFor(Route::class);
+            $table->foreignIdFor(Trip::class);
             $table->timestamp('departure_time');
             $table->timestamp('arrival_time')
                 ->comment('Estimated arrival time');

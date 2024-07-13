@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRouteRequest;
 use App\Http\Requests\UpdateRouteRequest;
-use App\Models\Route;
+use App\Models\Trip;
 
-class RouteController extends Controller
+class TripController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,7 +35,7 @@ class RouteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Route $route)
+    public function show(Trip $route)
     {
         //
     }
@@ -43,7 +43,7 @@ class RouteController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Route $route)
+    public function edit(Trip $route)
     {
         //
     }
@@ -51,7 +51,7 @@ class RouteController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateRouteRequest $request, Route $route)
+    public function update(UpdateRouteRequest $request, Trip $route)
     {
         //
     }
@@ -59,7 +59,7 @@ class RouteController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Route $route)
+    public function destroy(Trip $route)
     {
         //
     }
